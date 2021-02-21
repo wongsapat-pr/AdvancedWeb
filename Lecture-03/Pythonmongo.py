@@ -54,22 +54,3 @@ def get():
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=80)
-
-# mydict = {"Name":"Coke","Price":"10"}  insert ค่าเดียว
-# # x = mycollection.insert_one(mydict)
-
-# mylist = [  {"Name":"Pepsi","Price":"10"},  insert หลายค่า
-#             {"Name":"Fanta","Price":"10"},
-#             {"Name":"Sprite","Price":"10"}  
-#         ]
-# x = mycollection.insert_many(mylist)
-# print(x.inserted_ids)  แสดงค่าที่เพิ่มเข้าไป
-
-# x = mycollection.find_one()  แสดงผลค่าเดียว
-# print(x)
-
-# for x in mycollection.find():  แสดงผลหลายค่า
-#     print(x)
-
-# for x in mycollection.find({"Name":"Pepsi"}): แสดงผลแบบเฉพาะ
-#     print(x)
