@@ -3,7 +3,8 @@ from flask import Flask,jsonify,request
 
 app = Flask(__name__)
 
-myclient = pymongo.MongoClient("mongodb://admin:KAXiti79146@node9150-advweb-12.app.ruk-com.cloud:11120") #เชื่อม DB
+# myclient = pymongo.MongoClient("mongodb://admin:KAXiti79146@node9150-advweb-12.app.ruk-com.cloud:11120") #เชื่อม DB
+myclient = pymongo.MongoClient("mongodb://admin:KAXiti79146@10.100.2.127")
 mydb = myclient["store"]  
 mycol = mydb["product"]
 
