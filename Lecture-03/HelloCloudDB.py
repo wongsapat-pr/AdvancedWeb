@@ -9,10 +9,8 @@ app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://webadmin:FFGqce84823@node8579-advweb-12.app.ruk-com.cloud:11102/CloudDB'
 # app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://webadmin:FFGqce84823@10.100.2.174:5432/CloudDB'
 
-app.config['SQLALCHEMY_TRACK_MODIFICATION'] = False
-#Init db
-db = SQLAlchemy(app)
-#Init ma
+app.config['SQLALCHEMY_TRACK_MODIFICATION'] = False#Init db
+db = SQLAlchemy(app)#Init ma
 ma = Marshmallow(app)
 
 #Staff Class/Model
