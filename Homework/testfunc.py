@@ -6,16 +6,10 @@ def cards_needed(n):
         return n * (3 * n + 1) // 2
 
 
-# Sum of Odd and Even Numbers
-def sum_odd_and_even(lst):
-    sum = [0, 0]
-    for i in range(0, len(lst)):
-        if lst[i] % 2 == 0:
-            sum[0] += lst[i]
-        else:
-            sum[1] += lst[i]
-
-    return sum
+# Combined Consecutive Sequence
+def consecutive_combo(lst1, lst2):
+    nlist = lst1 + lst2
+    return sorted(nlist) == list(range(min(nlist), max(nlist) + 1))
 
 
 # Adding Numbers
@@ -66,3 +60,7 @@ def bonus(days):
     else:
         sum = 0
     return sum
+
+
+print(bonus(15))
+print(bonus(37))
